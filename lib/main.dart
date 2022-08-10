@@ -11,15 +11,32 @@ class Trying extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Container(
-            height: 100.0,
-            width: 200.0,
-            margin: const EdgeInsets.all(20),
-            padding: const EdgeInsets.all(20),
-            color: Colors.white,
-            child: const Text('This is my first Flutter App'),
-          ),
-        ),
+            child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Container(
+              height: 100,
+              width: 100,
+              padding: const EdgeInsets.all(5),
+              color: Colors.white,
+              child: const Text('Container One'),
+            ),
+            Container(
+              height: 100,
+              width: 100,
+              padding: const EdgeInsets.all(5),
+              color: Colors.blue,
+              child: const Text('Container Two'),
+            ),
+            Container(
+              height: 100,
+              width: 100,
+              padding: const EdgeInsets.all(5),
+              color: Colors.red,
+              child: const Text('Container Two'),
+            ),
+          ],
+        )),
       ),
     );
   }
